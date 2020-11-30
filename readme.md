@@ -1,5 +1,11 @@
 # Play Spotify Over Orange Pi Zero
 
+Use this instead:
+https://github.com/dtcooper/raspotify
+
+https://urakozz.medium.com/airplay-receiver-with-orange-pi-51d6bdcbc46f
+https://github.com/mikebrady/shairport-sync/blob/master/INSTALL.md
+
 ## Armbian
 
 https://www.armbian.com/orange-pi-zero/
@@ -109,8 +115,9 @@ systemctl enable spotify-connect.service
 ```bash
 # Alsa Mixer
 alsamixer
+alsactl store
 
 # List Audio Devices
 aplay -l
-aplay -L
+aplay -Ls
 ```
